@@ -99,3 +99,26 @@
 .copyButton:hover {
   background-color: var(--green-dark);
 }
+
+.container div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: .25rem;
+}
+
+.container div:last-child span {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--white);
+  padding-bottom: .5rem;
+}
+
+.container div:last-child div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: .25rem 0 2rem;
+  gap: 1.3rem;
+}

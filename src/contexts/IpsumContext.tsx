@@ -11,6 +11,7 @@ interface IpsumContextData {
   paragraphs: number
   ipsumText: JSX.Element
   handleParagraphs: (event: React.ChangeEvent<HTMLInputElement>) => void
+  generateQuote: () => string
   generateIpsum: () => void
   copyIpsum: () => void
 }
@@ -40,7 +41,7 @@ export const IpsumContextProvider = ({
 
     return `${first} ${second} ${third}. `
   }
-
+  
   const generateBlock = () => {
     let block = ''
     for(let i = 0; i < 3; i++) {
@@ -94,6 +95,7 @@ export const IpsumContextProvider = ({
       paragraphs,
       ipsumText,
       handleParagraphs,
+      generateQuote,
       generateIpsum,
       copyIpsum
     }}
