@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 1.5rem;
+    gap: 1rem;
+  }
+
+  .container img {
+    width: 40px;
+  }
+
+  .container p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    width: 100%;
+    color: var(--black);
+  }

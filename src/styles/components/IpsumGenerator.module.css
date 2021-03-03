@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+
+}
+
+
+@media only screen and (min-width: 1080px) {
+  .inputContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+.inputContainer p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white)
+}
+
+.inputContainer input {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 5rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.inputContainer button {
+  margin: 0 0 0 auto;
+  max-width: 25rem;
+  height: 2.75rem;
+  width: 13rem;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: var(--green);
+}
+
+.inputContainer button:hover {
+  background-color: var(--green-dark);
+}
+
+.container section {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  max-height: 25rem;
+  margin: 0 auto;
+
+  padding : 1.15rem 1.5rem 1.15rem 1.5rem;
+  color: var(--text);
+  background-color: var(--white);
+  border-radius: 3px;
+
+  overflow: auto;
+}
+
+@media only screen and (max-width: 720px) {
+  .container section {
+    width: 20rem;
+  }
+}
+
+.container section span {
+  font-size: 1.20rem;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 1.6rem;
+}
+
+.container section span:last-child {
+  padding-bottom: 1.15rem;
+}
+
+.copyButton {
+  margin: 1.5rem auto;
+  max-width: 25rem;
+  height: 2.75rem;
+  width: 15rem;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: var(--green);
+}
+
+.copyButton:hover {
+  background-color: var(--green-dark);
+}
