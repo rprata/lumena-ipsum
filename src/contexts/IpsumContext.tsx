@@ -10,6 +10,7 @@ interface IpsumProps {
 interface IpsumContextData {
   paragraphs: number
   ipsumText: JSX.Element
+  quote: string
   handleParagraphs: (event: React.ChangeEvent<HTMLInputElement>) => void
   generateQuote: () => string
   generateIpsum: () => void
@@ -24,7 +25,8 @@ export const IpsumContextProvider = ({
 
   const [ipsumText, setIpsumText] = useState(null)
   const [paragraphs, setParagraphs] = useState(1)
-  
+  const [quote, setQuote] = useState('')
+
   const quotes: string[] = []
 
   const { addToast } = useToasts()
@@ -39,9 +41,12 @@ export const IpsumContextProvider = ({
     const thirdIndex = Math.floor(Math.random() * ipsum.third.length)
     const third = ipsum.third[thirdIndex].text
 
+    setQuote(`${first} ${second} ${third}. `)
+    
     return `${first} ${second} ${third}. `
   }
-  
+
+
   const generateBlock = () => {
     let block = ''
     for(let i = 0; i < 3; i++) {
@@ -94,6 +99,7 @@ export const IpsumContextProvider = ({
     value={{ 
       paragraphs,
       ipsumText,
+      quote,
       handleParagraphs,
       generateQuote,
       generateIpsum,

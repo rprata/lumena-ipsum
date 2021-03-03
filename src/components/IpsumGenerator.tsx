@@ -7,6 +7,7 @@ const IpsumGenerator = () => {
   const { 
     paragraphs, 
     ipsumText,
+    quote,
     handleParagraphs,
     generateQuote,
     generateIpsum,
@@ -47,14 +48,16 @@ const IpsumGenerator = () => {
         <div>
           <TwitterShareButton
             url='http://bit.ly/lumenes-ipsum'
-            title={generateQuote()}>
+            title={quote}
+            onClick={generateQuote}>
             <TwitterIcon
               size={45}
               round />
           </TwitterShareButton> 
           <WhatsappShareButton
             url='http://bit.ly/lumenes-ipsum'
-            title={generateQuote()}>
+            title={quote}
+            onClick={generateQuote}>
             <WhatsappIcon
               size={45}
               round />
