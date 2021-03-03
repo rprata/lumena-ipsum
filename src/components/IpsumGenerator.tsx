@@ -46,14 +46,14 @@ const IpsumGenerator = () => {
         <span>Compartilhe sua militância</span>
         <div>
           <TwitterShareButton
-            url='https://bit.ly/lumenes'
+            url='http://bit.ly/lumenes-ipsum'
             title={generateQuote()}>
             <TwitterIcon
               size={45}
               round />
           </TwitterShareButton> 
           <WhatsappShareButton
-            url='https://bit.ly/lumenes'
+            url='http://bit.ly/lumenes-ipsum'
             title={generateQuote()}>
             <WhatsappIcon
               size={45}
