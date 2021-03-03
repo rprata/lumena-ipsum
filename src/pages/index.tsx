@@ -13,7 +13,7 @@ const Home = () => {
       <IpsumContextProvider>
         <div className={styles.container}>
           <Head>
-            <title>Lumena Ipsum | Um lorem ipsum fenotipicamente eficaz</title>
+            <title>Lumenês | Um lorem ipsum fenotipicamente eficaz</title>
           </Head>
           <Header />
           <IpsumGenerator />
