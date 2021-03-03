@@ -6,7 +6,6 @@ const Footer = () => {
       <a href='https://github.com/rprata/lumena-ipsum'>
         <img src='/icons/github.png' alt='github'/>
       </a>
-      <p>© 2021 Renan Prata</p>
     </div>
   )
 }

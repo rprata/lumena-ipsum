@@ -10,7 +10,8 @@
   }
 
   .container img {
-    width: 40px;
+    width: 50px;
+    margin-bottom: 1rem;
   }
 
   .container p {
