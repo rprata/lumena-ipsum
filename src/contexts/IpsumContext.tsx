@@ -84,7 +84,6 @@ export const IpsumContextProvider = ({
     navigator.clipboard.writeText(text)
     addToast('O texto foi fenotipicamente copiado', {
       appearance: 'success',
-      autoDismissTimeout: 2000,
       autoDismiss: true
     })
   }
